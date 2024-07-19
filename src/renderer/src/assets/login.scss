@@ -1,0 +1,122 @@
+@media (max-width:600px){
+  .logoCircle {
+    padding: 0.2rem;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoCircle {
+  position: absolute;
+  border: 2px solid black;
+  width: 8vh;
+  height: 8vh;
+  background-color: white;
+  z-index: 999;
+  top: -8%;
+  left: 40%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1rem;
+
+  .logo {
+    transform: scale(0.8);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.transformation {
+  transform: translate(50%,50%) scale(2.5,2.5);
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  background-image: url("./Image/13998279154_3cd6083b40_o.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  filter: blur(4px);
+}
+
+
+
+
+.login {
+  padding: 9rem 3rem;
+  margin: 0 0 0 1.6rem;
+  background: linear-gradient(45deg,#f95327 25%,#fec961 100%);
+  border-radius: 20px;
+  position: relative;
+}
+
+.formLogin {
+  width: 100%;
+  height: 18vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  label {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    color: white;
+    font-weight: bold;
+  }
+  .space {
+    margin-bottom: 1rem;
+  }
+  input:not([type~="submit"]){
+    background-color: transparent;
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.2rem;
+    border-radius: 3%;
+    border: 0.5 solid rgb(34, 32, 32);
+    margin: 0.4rem;
+    border: 0;
+    border-bottom: 2px solid white;
+    transition: 0.5s ease-in-out;
+  }
+  input:not([type~="submit"]):focus{
+    padding: 0.4rem;
+  }
+  input:not([type~="submit"])::placeholder{
+    color: white;
+    opacity: 30%;
+  }
+
+  #authUser{
+    margin: 4rem auto 0 auto;
+    width: 80%;
+    color: orange;
+    font-size: 1.0rem;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    background: white;
+    border: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 4px 11px black;
+    transition: transform  0.5s ease-in-out;
+  }
+
+  #authUser:hover{
+    transform: scale(1.10,1.10);
+
+
+  }
+}
